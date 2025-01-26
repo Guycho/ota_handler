@@ -53,9 +53,9 @@ bool OTAHandler::init() {
             if (m_print_debug) {
                 Serial.print("Trying to connect to ");
                 Serial.println(m_ssid[j]);
+            }
                 WiFi.begin(m_ssid[j], m_password[j]);
                 break;
-            }
         }
     }
 
